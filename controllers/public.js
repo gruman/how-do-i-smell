@@ -13,7 +13,7 @@ function randomInt(min, max) {
 exports.getSmell = (req, res, next) => {
   
   const smell = {
-    message: "You smell like " + nouns[randomInt(0, nouns.length)].toLowerCase() + " " + between[randomInt(0, between.length)].toLowerCase() + " " + nouns[randomInt(0, nouns.length)].toLowerCase() + "." 
+    message: "You smell like " + nouns[randomInt(0, nouns.length)] + " " + between[randomInt(0, between.length)].toLowerCase() + " " + nouns[randomInt(0, nouns.length)] + "." 
   }
   res.send(smell);
 }
